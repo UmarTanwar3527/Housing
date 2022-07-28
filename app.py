@@ -2,7 +2,7 @@
 """
 Created on Fri Mar 26 12:38:32 2021
 
-@author: deepak
+@author: umar
 """
 
 import numpy as np
@@ -31,6 +31,6 @@ def predict():
     prediction = model.predict([[exp]])
     
         
-    return render_template('index.html', prediction_text='Regression Model  has predicted salary for given experinace is : {}'.format(prediction))
+    return render_template('index.html', prediction_text='Regression Model  has predicted Price for given SqFt is : {}'.format(prediction))
 if __name__ == "__main__":
     app.run(debug=True)
